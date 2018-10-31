@@ -2,10 +2,6 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
-body {
-    text-rendering: optimizeLegibility;
-}
-
 /*
  BARVY
  svetle sede pozadi      #f5f5f5
@@ -21,3 +17,138 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+body {
+    text-rendering: optimizeLegibility;
+    font-family: "Rubik";
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 11px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 15px;  /* velikost není specifikovaná, takhle podle mě více odpovídá návrhu */
+    margin-top: 30px;
+}
+
+.zbozi {
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 670px;
+    box-shadow: 1px 4px 18px -1px #c5c5c5;
+    border-radius: 10px;
+}
+
+.vizual {
+    background-image: linear-gradient(#06d7c1, #50cc49);
+    height: 440px;
+    width: 50%;
+    float: left;
+    padding: 30px;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+}
+
+.detaily {
+    position: relative;
+    background-color: white;
+    height: 440px;
+    width: 50%;
+    float: left;
+    padding: 30px;
+    border-radius: 0 10px 10px 0;
+}
+
+.produkt {
+    color: #959595;
+    margin: 0;
+}
+
+.slogan {
+    margin-top: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;  
+}
+
+.bota img {
+    position: absolute;
+    right: 1px;
+    bottom: 3px;
+}
+
+.cenovka {
+    text-align: right;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.cena {
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+.zaruka {
+    padding-top: 3px;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+.popis {
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    border-bottom: solid 1px #06d7c1;
+    line-height: 1.4;
+}
+
+.velikosti {
+    padding: 0;
+    margin: 0;
+}
+
+.velikosti li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 0.7em;
+}
+
+.vybrana {
+    padding: 5px;
+    color: #f15f42;
+    border: solid 1px #f15f42;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.akce {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    padding: 0.9em 2.1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    background-color: #f15f42;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px -2px #bbbbbb;
+}
+
+.akce a { 
+    text-decoration: none;
+    color: white;
+}
